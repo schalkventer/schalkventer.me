@@ -96,11 +96,6 @@ details > summary > h2::after {
   display: inline-block;
 }
 
-details > summary:focus > h2 {
-  // background: #a4e402 !important;
-  // color: #222222 !important;
-}
-
 .content {
   margin-left: 4rem;
   margin-bottom: 4rem;
@@ -112,6 +107,10 @@ details > summary:focus > h2 {
 
 .grey-text {
   color: #5d5d5d;
+}
+
+.image {
+  letter-spacing: 0.3px;
 }
 
 .cursor {
