@@ -1,0 +1,125 @@
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+body {
+  background: #222222;
+  color: white;
+  font-family: "Roboto Mono", sans-serif;
+  padding: 2rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  overflow-y: scroll;
+}
+
+h1 {
+  color: #ff9800
+}
+
+h2 {
+  font-size: 1rem;
+  color: #a4e402;
+  display: inline;
+  text-decoration: underline;
+  cursor: pointer;
+  white-space: pre;
+}
+
+li {
+  list-style: none;
+}
+
+li::before {
+  content: '* '
+}
+
+a {
+  color: #60d9f1;
+}
+
+a:hover, {
+  opacity: 0.5;
+}
+
+a:focus, {
+  background: #60d9f1;
+  color: #222;
+}
+
+details {
+  width: 100%;
+}
+
+summary {
+  display: inline-block;
+}
+
+details > summary::-webkit-details-marker {
+  display:none;
+}
+
+details > summary > h2::before {
+  content: '   ';
+  font-size: 1rem;
+  display: inline-block;
+}
+
+details:hover > summary > h2::before {
+  content: ' > ';
+  font-size: 1rem;
+  display: inline-block;
+}
+
+details[open]:hover > summary > h2::before {
+  content: ' < ';
+  font-size: 1rem;
+  display: inline-block;
+}
+
+details > summary > h2::after {
+  content: '   ';
+  font-size: 1rem;
+  display: inline-block;
+}
+
+details > summary:focus > h2 {
+  background: #a4e402 !important;
+  color: #222222 !important;
+}
+
+.content {
+  margin-left: 4rem;
+  margin-bottom: 4rem;
+}
+
+.green-text {
+  color: #a4e402;
+}
+
+.grey-text {
+  color: #5d5d5d;
+}
+
+strong, em {
+  color: #fc1f70;
+}
+
+.cursor {
+  font-weight: bold;
+  opacity: 1;
+  animation-name: blink;
+  animation-iteration-count: infinite;
+  animation-duration: 0.5s;
+  animation-direction: alternate;
+}
+
+.footnotes {
+  margin-top: 2rem;
+  color: #5d5d5d;
+}
