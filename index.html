@@ -1,215 +1,217 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en" >
   <head>
+    <meta charset="UTF-8">
     <title>Schalk Venter</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link 
-      href="./style.css"
-      rel="stylesheet"
-    >
-    <link 
-      href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&amp;display=swap"
-      rel="stylesheet"
-    >
+
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./script.js"></script>
   </head>
 
   <body>
-    <h1>~ Hello Friend!</h1>
-    <p>My name is Schalk. Please select one of the following options:</p>
+    <div class="layout">
 
-    <details>
-      <summary>
-        <h2>Front-end Development</h2>
-      </summary>
+      <!-- Header -->
 
-      <div class="content">
-        <p>
-          <span>Most of my open-source work is on my </span>
-          <a href="https://github.com/schalkventer">GitHub account</a>
-          <span>.</span>
-        </p>
+      <header class="header">
+        <pre class="header__image">
+              `/shdyo+.            
+          :myhhhsyhyo`          
+          yy``.-:+dmd`          
+          +    .-`:hh`          
+          `.`- `  -:.           
+            `-  ```.+            
+            `-  .-`.            
+              +  .` ````         
+          `-/  -`` ```...```     
+        `.-: -.`  ```.....``.`   
+      .--..:o::.+++:-...-....`  
+      -::..--.-........--.....  
+      ./:+.--..-.......-::-.-.-` 
+      -/:+.--+.-:-..----:----.-.
+      -/:+.--+.-:-..----:-+--.-. 
+      - : .  +. : ..-
+        </pre>
 
-        <p>I've also done private work for the following clients:</p>
+        <label class="header__theme">
+          <span class="header__label">Change theme</span>
+          <select class="header__dropdown" data-interactivity="theme-switcher">
+            <option value="Dracula">Dracula</option>
+            <option value="Cobalt">Cobalt</option>
+            <option value="Eclipse">Eclipse</option>
+            <option value="Solarized">Solarized</option>
+          <select>
+        </label>
+      </header>
 
-        <ul>
-          <li>
-            <a href="#">Draint Art</a>
-            <em> (German)</em>
-          </li>
+      <!-- Intro -->
 
-          <li>
-            <a href="#">Calumino</a>
-            <em> (Australian)</em>
-          </li>
-        </ul>
+      <aside class="content">
+        <p class="content__underline"><strong>Hello internet-friend!</strong>
 
-        <p>
-          <span>I also maintain the following JavaScript libraries on </span>
-          <a href="https://www.npmjs.com/~schalkventer">NPM</a>
-          <span>:</span>
-        </p>
-      
-        <ul>
-          <li><a href="#">TypeScript Measurements</a></li>
-          <li><a href="#">React Paradrop</a></li>
-          <li><a href="#">Populate Info</a></li>
-        </ul>
-      </div>
-    </details>
+          <p><strong>I'm a South African UI Designer/Front-end Developer, spending the majority of my time on the following:</strong></p>
 
-    <details>
-      <summary>
-        <h2>Visual Design</h2>
-      </summary>
-      <div class="content">
-        <p>
-          <span>I used to be a visual artist in a previous life, most of my art can be viewed on my </span>
-          <a href="#">Behance account</a>
-          <span>. You can have a look at some of the following:</span>
-        </p>
+          <ul>
+            <li>
+            👪 Managing <a href="https://www.meetup.com/ctfeds" target="_blank">Front-end Development South Africa (FEDSA)</a>, a non-profit organisation that I co-founded with my friends <a href="https://github.com/shailennaidoo" target="_blank">Shailen Naidoo</a> and <a href="https://github.com/justinslack" target="_blank">Justin Slack</a>.</p>
+            </li>
+            <li>
+              🌍 Exploring the intersection between technology, social good and civic-engagement alongside my friends at <a href="https://www.meetup.com/Codebridge/" target="_blank">Codebridge</a> and <a href="https://openup.org.za/" target="_blank">OpenUp</a>.   
+            </li>
+            <li>🦄 Doing freelance consultation and/or contract work on for clients.</li>
+          </ul>
 
-        <ul>
-          <li><a href="#">Ongesiend & Ongehoord</a></li>
-          <li><a href="#">Liewe Schalk Venter, Liefde Schalk Venter</a></li>
-        </ul>
+          <p>
+            <a href="https://github.com/schalkventer" target="_blank">
+              <img src="https://img.shields.io/github/followers/schalkventer?label=Follow%20me%20on%20Github&style=social">
+            </a>
+          </p>
 
-        <p>
-          <span>However, nowadays I mostly do branding and UI design. These can be viewed on my </span>
-          <a href="#">Dribble account</a>
-          <span>. You can have a look at some of the following:</span>
-        </p>
+          <p>
+            <em>If you find any of the above interesting you might want to follow me on Github - where all of this takes place. For everything else see sections below.</em>
+          </p>
+        </aside>
 
-        <ul>
-          <li><a href="#">Diff Branding</a></li>
-          <li><a href="#">Vulekamali Create</a></li>
-        </ul>
-      </div>
-    </details>
+      <!-- Main Content -->
 
-    <details>
-      <summary>
-        <h2>Research and Writing</h2>
-      </summary>
+        <main>
+          <article>
+            <details class="section">
+              <summary class="section__preview section__preview_primary">Personal projects</summary>
 
-      <div class="content">
-        <p>
-          <span>I'm a pretty big nerd, when I'm not spending time with my wife I'm reading documentation or </span>
-          <a href="https://www.w3.org/">browser specifications</a>
-          <span>. However, more than the above, I really enjoy sharing what I've learned with others either on my </span>
-          <a href="https://medium.com/@schalkventer">Medium account</a>
-          <span>, (as commissioned articles) or by means of </span>
-          <a href="https://slides.com/schalkventer">workshops/talks</a>
-          <span>.</span>
-        </p>
+              <div class="content">
+                <p><strong>I'm a big fan of the open-source methology and volunteer-driven projects.</strong></p>
+                  
+                <p class="content__underline">I'm currently contributing my time to the following communities:</p>
 
-        <p>You can have a look at some of the articles I've written:</p>
-        <ul>
-          <li>
-            <a href="#">GraphQL for front-end Developers</a>
-            <span> for </span>
-            <em>Free Code Camp</em>
-          </li>
-          
-          <li>
-            <a href="#">CSS Feature Detection</a>
-            <span> for </span>
-            <em>CSS Tricks</em>
-          </li>
-          
-          <li>
-            <a href="#">Setting yourself up for failure</a>
-            <span> for </span>
-            <em>Prototypr</em>
-          </li>
-        </ul>
+                <ul>
+                    <li>
+                      <a href="https://www.meetup.com/ctfeds" target="_blank">Front-end Development South Africa (FEDSA)</a>
+                      <p>
+                        <span>A 3000+ member, non-profit organisation that I co-founded with two good friends: </span>
+                        <a href="https://justinslack.com" target="_blank">Justin Slack</a>
+                        <span> and </span>
+                        <a href="https://www.linkedin.com/in/shailen-naidoo-340005a2" target="_blank">Shailen Naidoo</a>
+                        <span>. The goal of FEDSA is to support and advocate for the advancement of front-end development in South Africa.</span>
+                      </p>
+                    </li>
 
-        <p>I've also presented several workshops, such as the following (amongst others):</p>
-        <ul>
-          <li>
-            <a href="#">What the ES6?</a>
-            <span> for </span>
-            <em>Cape Town Facebook Developer Circle</em>
-          </li>
-          
-          <li>
-            <a href="#">JAMstack for beginners</a>
-            <span> for </span>
-            <em>Cape Town Front-end Developers</em>
-          </li>
-        </ul>
-      </div>
-    </details>
+                    <li>
+                      <a href="https://zatech.co.za" target="_blank" >ZA Tech</a>
+                      <p>I spend a fair bit of time attending to administrative and moderation tasks (alongside 9 other individuals) on ZA Tech, a 10 000+ member Slack workspace used by the South Africa tech community at large.</p>
+                    </li>
 
-    <details>
-      <summary>
-        <h2>Social good</h2>
-      </summary>
-      <div class="content">
-        <p>...</p>
-      </div>
-    </details>
+                    <li>
+                      <a href="https://www.meetup.com/Codebridge" target="_blank">Codebridge</a>
+                      <p>I used to formally manage this 1500+ member organisation. However I recently stepped down in my official capacity, but still remain involved in a less formal capacity.</p>
+                    </li>
+                  </ul>
 
-    <div class="footnotes">
-      <pre class="image">                          
-                       `--:.                        
-                    `/yhddddhys+-                   
-                  .sdddmdddyyyhdds:`                 
-                 `ymdoyhhhhohhyhhsyo                  
-                 :dm:` `-//++yhmmmmo                
-                 -dd:.    `...-hddmd                  
-                 `hd/++. `---.`.dddy                
-                  /s```.       .h:o-                
-                    ``.:--``  `.-:`                 
-                    ../:....```.y/                   
-                    `..``  ```.-:`                   
-                     `:-```..-:``-                   
-                      `:++o+:.`  .``               
-                      -h-:-``    ```.``             
-                  .-//yd-.``    ````....```          
-              `.-//+o:/o:.```  ````.......`````      
-            `...--:::-..``    `...`........``...     
-           `-.-..--:/+`.`  .:+ss+/-..............    
-           .-.:....-/o+++:-+o:--........---......`  
-          `-/-/.....--..-...............---.......` 
-          :::/+...----..-.............-:--..-..-.-. 
-          //-/o-..-.....---...........--/::--.-..--`
-         `//:-s-..-----------......-.---+------..--` 
-         .:/::s-..-:-..--::--.---.-----:-:----...--. 
-      </pre>
-      
-      <p>
-        <span>You can get in touch at </span>
-        <a class="grey-text" href="mailto:info@schalkventer.me">info@schalkventer.me</a>
-        <span>.</span>
-      </p>
+                <p class="content__underline">In addition, I maintain the following open-source projects on Github/NPM<p>
 
-      <p>
-        <span>This site consists of 6kB of unminified HTML and 2kB of unminified CSS.</span>
-        <br>
-        <span>You can fork it from my </span>
-        <a 
-           class="grey-text"
-           href="https://codepen.io/schalkventer/pen/WVQGLv"
-         >
-          <span>Codepen account</span>
-        </a>
-        <span>.</span>
-      </p>
+                <ul>
+                  <li>
+                    <a href="https://github.com/schalkventer/millimeter" target="_blank">Millimetr</a>
+                    <img class="badge" src="https://img.shields.io/github/stars/schalkventer/millimeter?style=social&label=%20">
+                    <p><em>Description coming soon...</em>.</p>
+                  </li>
+                  
+                  <li>
+                    <a href="#" target="_blank">Yet Another React Structure (YARS)</a>
+                    <img class="badge" src="https://img.shields.io/github/stars/schalkventer/yars?style=social&label=%20">
+                    <p><em>Description coming soon...</em>.</p>
+                  </li>
 
-      <p>
-        <span>All content licensed under </span>
-        <a 
-           class="grey-text"
-           href="https://creativecommons.org/licenses/by-sa/4.0/"
-        >
-          <span>Creative Commons Attribution-ShareAlike 4.0</span>
-        </a>
+                  <li>
+                    <a href="https://github.com/schalkventer/millimeter" target="_blank">Use Collection</a>
+                    <img class="badge" src="https://img.shields.io/github/stars/schalkventer/use-collection?style=social&label=%20">
+                    <p><em>Description coming soon...</em>.</p>
+                  </li>
+                  
+                  <li>
+                    <a href="https://github.com/schalkventer/use-collection" target="_blank">Use Collection</a>
+                    <img class="badge" src="https://img.shields.io/github/stars/schalkventer/use-collection?style=social&label=%20">
+                    <p><em>Description coming soon...</em>.</p>
+                  </li>
+                  
+                  <li>
+                    <a href="https://github.com/schalkventer/faker-extra" target="_blank">Faker Extra</a>
+                    <img class="badge" src="https://img.shields.io/github/stars/schalkventer/faker-extra?style=social&label=%20">
+                    <p><em>Description coming soon...</em>.</p>
+                  </li>
+                </ul>
 
-        <span> unless specified otherwise.</span>
-      </p>
+                <p class="content__underline">I've also contributed to the following open-source projects on Github (among others):<p>
+
+                <ul class="section__list">
+                  <li>
+                    <a href="https://github.com/microsoft/TypeScript/wiki" target="_blank">TypeScript</a>
+                    <img class="badge" src="https://img.shields.io/github/stars/microsoft/TypeScript?style=social&label=%20">
+                    <p><em>Description coming soon...</em></p>
+                  </li>
+
+                  <li>
+                    <a href="https://github.com/mui-org/material-ui" target="_blank">Material UI</a>
+                    <img class="badge" src="https://img.shields.io/github/stars/mui-org/material-ui?style=social&label=%20">
+                    <p><em>Description coming soon...</em></p>
+                  </li>
+
+                  <li>
+                    <a href="https://github.com/storybookjs/storybook" target="_blank">Storybook</a>
+                    <img class="badge" src="https://img.shields.io/github/stars/storybookjs/storybook?style=social&label=%20">
+                    <p><em>Description coming soon...</em></p>
+                  </li>
+
+                  <li>
+                    <a href="https://github.com/streamich/react-use" target="_blank">React Use</a>
+                    <img class="badge" src="https://img.shields.io/github/stars/streamich/react-use?style=social&label=%20">
+                    <p><em>Description coming soon...</em></p>
+                  </li>
+
+                  <li>
+                    <a href="https://github.com/preactjs/preact-cli" target="_blank">Preact CLI</a>
+                    <img class="badge" src="https://img.shields.io/github/stars/preactjs/preact-cli?style=social&label=%20">
+                    <p><em>Description coming soon...</em></p>
+                  </li>
+
+                  <li>
+                    <a href="https://github.com/developit/htm" target="_blank">Hyperscript Tagged Markup</a>
+                    <img class="badge" src="https://img.shields.io/github/stars/developit/htm?style=social&label=%20">
+                    <p>.<em>Description coming soon...</em></p>
+                  </li>
+
+                  <li>
+                    <a href="https://github.com/maban/styleguides" target="_blank">Styleguides.io</a>
+                    <img class="badge" src="https://img.shields.io/github/stars/maban/styleguides?style=social&label=%20">
+                    <p><em>Description coming soon...</em></p>
+                  </li>
+                </ul>
+              </div>
+            </details>
+          </article>
+
+          <details class="section">
+            <summary class="section__preview section__preview_secondary ">Writing and research</summary>
+            <div><em>Content coming soon...</em></div>
+          </details>
+
+          <details class="section">
+            <summary class="section__preview section__preview_tertiary ">Client-work</summary>
+            <div><em>Content coming soon...</em></div>
+          </details>
+      </main>
+
+      <footer class="content">
+          <p>You can get in touch with me at <a href="#">info@schalkventer.me.</a></p>
+
+          <p>This site consists of 3kB of HTML, 2.5kB of CSS and 1kb of JavaScript. <a href="#">You are welcome to fork it on Github.</a></p>
+
+          <p>All content licensed under <a href="#">Creative Commons Attribution-ShareAlike 4.0</a> unless specified otherwise.</p>
+
+          <pre class="terminal">schalkventer@me:~$ <span class="terminal__animation">_<span></pre>
+      </footer>
     </div>
-    
-    <div>schalkventer@me:~$ <span class="cursor">_</span><div>
   </body>
 </html>
