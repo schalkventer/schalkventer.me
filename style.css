@@ -45,7 +45,9 @@
   box-sizing: border-box;
 }
 
-
+html {
+  background: var(--background);
+}
 
 body {
   background: var(--background);
