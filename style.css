@@ -84,6 +84,19 @@ body {
 .header__image {
   font-family: monospace;
   font-size: 1.2rem;
+  position: relative;
+  right: 2rem;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+}
+
+.header__image:hover {
+  white-space: initial;
+  padding: 0 3rem;
 }
 
 .header__theme {
@@ -266,7 +279,7 @@ body {
 }
 
 /* 
- * content block
+ * Content
  */
 
 .content {
@@ -302,8 +315,27 @@ body {
   margin: 2rem 1rem 3rem;
 }
 
+.content ul.content__minimal-list {
+  padding: 0;
+  margin: 2rem 1rem 2.5rem;
+}
+
 .content li {
   padding: 0.5rem 0;
+}
+
+.content li.content__minimal-item {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.content__minimal-icon {
+  padding-right: 0.5rem;
+}
+
+.content__indent {
+  padding-left: 1rem;
 }
 
 /*
