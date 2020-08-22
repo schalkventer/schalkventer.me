@@ -341,9 +341,12 @@ body {
   padding: 0;
   margin: 2rem 1rem 2.5rem;
 }
-
 .content li {
   padding: 0.5rem 0;
+}
+
+.content ul.content__expanded-item li {
+  padding: 0.5rem 0 4rem;
 }
 
 .content li.content__minimal-item {
@@ -391,4 +394,10 @@ body {
   position: relative;
   top: 0.2rem;
   left: 0.5rem;
+}
+
+.badge__follow {
+  position: static;
+  display: inline-flex;
+  min-height: 1.25rem;
 }
