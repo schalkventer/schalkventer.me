@@ -91,3 +91,15 @@ const updateTheme = (event) => {
  */
 
 THEME_SWITCHER.addEventListener('change', updateTheme);
+
+const details = document.querySelectorAll("details");
+
+document.querySelectorAll("details").forEach((targetDetail) => {
+  targetDetail.addEventListener("click", () => {
+    details.forEach((detail) => {
+      if (detail !== targetDetail) {
+        detail.removeAttribute("open");
+      }
+    });
+  });
+});
