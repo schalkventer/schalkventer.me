@@ -22,7 +22,7 @@
 }
 
 
-@-webkit-keyframes blink {
+@keyframes blink {
   from {
     opacity: 1;
   }
@@ -32,12 +32,16 @@
 }
 
 
-@keyframes blink {
+@keyframes open {
   from {
-    opacity: 1;
+    transform: scaleY(0);
+    opacity: 0;
+    transform-origin: top;
   }
   to {
-    opacity: 0;
+    transform: scaleY(1);
+    opacity: 1;
+    transform-origin: top;
   }
 }
 
@@ -142,7 +146,9 @@ body {
 }
 
 /*
- * section block
+ * @name Section
+ *
+ * @description ...
  */
 
 .section {
@@ -298,6 +304,11 @@ body {
   min-height: 10rem;
 }
 
+.section[open] .content {
+  animation-name: open;
+  animation-duration: 0.2s;
+}
+
 .content a {
   font-weight: bold;
   color: var(--highlight);
@@ -320,10 +331,8 @@ body {
   border-bottom: 1px solid var(--base-accent);
 }
 
-
-
 .content ul {
-  margin: 0.5rem 0 2rem;
+  margin: 0.5rem 1rem 2rem;
   list-style: none;
   padding: 0;
 }
@@ -331,7 +340,7 @@ body {
 @media (min-width: 30rem) {
   .content ul {
     list-style-type: disc;
-    margin: 1.5rem 1rem 2rem 5rem;
+    margin: 1.5rem 0 2rem 0;
   }
 }
 
@@ -374,28 +383,57 @@ body {
 .terminal__animation {
   font-weight: bold;
   opacity: 1;
-  -webkit-animation-name: blink;
-          animation-name: blink;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
+  animation-name: blink;
+  animation-iteration-count: infinite;
+  animation-duration: 0.5s;
+  animation-direction: alternate;
 }
 
-/*
- * badge block
+/**
+ * @name Badges
+ *
+ * @description Github-styled badge 
  */
 
-.badge {
-  position: relative;
-  top: 0.2rem;
-  left: 0.5rem;
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.badge__follow {
-  position: static;
-  display: inline-flex;
-  min-height: 1.25rem;
+@media (min-width: 35rem) {
+  .badges {
+    justify-content: flex-start;
+  }
 }
+
+a.badges__link {
+  display: flex;
+  margin: 0.05rem;
+}
+
+/**
+ * @name Testimonial
+ *
+ * @description ...
+ */
+
+ .testimonial {
+   display: flex;
+   flex-direction: column;
+ }
+
+ @media (min-width: 40rem) {
+  .testimonial {
+    flex-direction: row;
+  }
+ }
+
+ .testimonial__side {
+   padding-right: 1.5rem;
+ }
+
+ a.testimonial__org {
+   display: inline-block;
+   margin-top: 1rem;
+ }
