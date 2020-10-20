@@ -17,7 +17,7 @@ const CSS_VARIABLES = [
 ];
 
 const THEMES = {
-  Dracula: {
+  Monokai: {
     background: '#282a36',
     highlight: 'white',
     'highlight-inverse': '#1e1f23',
@@ -42,6 +42,19 @@ const THEMES = {
     'secondary-accent': '#00660020',
     tertiary: '#7f0055',
     'tertiary-accent': '#7f005520',
+  },
+  'Vim Dark': {
+    background: '#000000',
+    highlight: '#55ff55',
+    'highlight-inverse': '#000000',
+    base: '#bbbbbb',
+    'base-accent': '#bbbbbb20',
+    primary: '#ffff55',
+    'primary-accent': '#ffff5520',
+    secondary: '#ff55ff',
+    'secondary-accent': '#ff55ff20',
+    tertiary: '#55ffff',
+    'tertiary-accent': '#55ffff20',
   },
   Cobalt: {
     background: '#002240',
