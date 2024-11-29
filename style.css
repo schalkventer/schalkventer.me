@@ -105,6 +105,13 @@ body {
   cursor: default;
 }
 
+.header__slow-blink {
+  animation-name: blink;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-direction: alternate;
+}
+
 .header__theme {
   position: relative;
   display: block;
