@@ -450,3 +450,15 @@ a.testimonial__org {
   display: inline-block;
   margin-top: 1rem;
 }
+
+.chart {
+  margin-bottom: 2rem;
+  margin-left: -1.5rem;
+  display: none;
+}
+
+@media (min-width: 50rem) {
+  .chart {
+    display: block;
+  }
+}
